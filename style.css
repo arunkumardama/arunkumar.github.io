@@ -106,21 +106,37 @@ p {
 /* CERTIFICATION BANNER */
 /* CERTIFICATION FIX */
 /* CERTIFICATION SECTION */
+/* CERTIFICATION SECTION */
 .cert-section {
-  margin-top: 60px;
-  text-align: left; /* keeps heading aligned like rest */
+  margin-top: 70px;
 }
 
-/* IMAGE FIX */
+/* CARD CONTAINER */
+.cert-card {
+  margin-top: 25px;
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+
+  backdrop-filter: blur(10px);
+}
+
+/* IMAGE */
 .cert-banner {
-  display: block;
-  margin: 20px auto 0 auto; /* centers image */
-  
   width: 100%;
-  max-width: 650px; /* 🔥 controls size */
-  
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 420px; /* 🔥 perfect balanced size */
+
+  border-radius: 10px;
+}
+
+/* OPTIONAL HOVER (clean feel) */
+.cert-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
 }
 /* PROJECT */
 .project {
