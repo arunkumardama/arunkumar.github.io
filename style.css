@@ -1,70 +1,84 @@
-:root {
-  --bg: #f8fafc;
-  --main: #111;
-  --muted: #666;
-  --border: #ddd;
-}
-
 body {
   font-family: "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--main);
+  background: #f8fafc;
+  color: #111;
 }
 
+/* CONTAINER */
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 80px 20px;
 }
 
-.header {
+/* HERO */
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .profile {
-  width: 100px;
+  width: 90px;
   border-radius: 50%;
 }
 
-.role {
-  color: var(--muted);
+/* STATUS */
+.status {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
+.dot {
+  height: 8px;
+  width: 8px;
+  background: green;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* LINKS */
 .links a {
   margin-right: 15px;
   text-decoration: none;
-  font-weight: 500;
+  color: #2563eb;
 }
 
-section {
-  margin-top: 50px;
+/* CARD STYLE */
+.card {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-.project {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.tag, .tags span {
+/* TAGS */
+.tags span {
   display: inline-block;
-  padding: 5px 10px;
-  margin: 5px;
   background: #eee;
+  padding: 6px 12px;
+  margin: 5px;
   border-radius: 20px;
   font-size: 12px;
 }
 
-.toggle {
+/* BACKGROUND SHAPE */
+.bg-shape {
   position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-.dark {
-  --bg: #0f172a;
-  --main: #f1f5f9;
-  --muted: #94a3b8;
-  --border: #1e293b;
+  right: -100px;
+  bottom: -100px;
+  width: 400px;
+  height: 400px;
+  background: #c7f0e9;
+  border-radius: 50%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+  transform: rotate(-20deg);
 }
