@@ -8,59 +8,127 @@
 
 <body>
 
-  <button onclick="toggleDark()">🌙</button>
+<button class="toggle" onclick="toggleDark()">🌙</button>
 
-  <div class="container">
+<div class="container">
 
-    <h1>I'm Arun.</h1>
-    <p class="role">Identity & Access Management Engineer</p>
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <h1>I'm Arun.</h1>
+      <p class="role">Identity & Access Management Engineer</p>
 
-    <!-- LINKS -->
-    <div class="links">
-      <a href="Resume.pdf" target="_blank">Resume</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <div class="links">
+        <a href="Resume.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/arunkumardama" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/arunkumar-d-582125168/" target="_blank">LinkedIn</a>
+      </div>
     </div>
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        IAM Engineer specializing in Azure Entra ID, Active Directory, RBAC, and identity security.
-        Experienced in managing global user access, enforcing security policies, and automating identity workflows.
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects">
-      <h2>Featured Work</h2>
-
-      <div class="project">
-        <h3>Exchange Mailbox Audit Automation</h3>
-        <p>Built PowerShell scripts to extract mailbox details for audit and compliance.</p>
-        <span class="tag">PowerShell</span>
-        <span class="tag">Exchange</span>
-      </div>
-
-      <div class="project">
-        <h3>User Lifecycle Management</h3>
-        <p>Managed onboarding/offboarding using AD & Entra ID with RBAC.</p>
-        <span class="tag">IAM</span>
-        <span class="tag">AD</span>
-      </div>
-
-      <div class="project">
-        <h3>Access Governance</h3>
-        <p>Implemented RBAC and access reviews to enforce least privilege.</p>
-        <span class="tag">RBAC</span>
-        <span class="tag">Security</span>
-      </div>
-
-    </section>
-
+    <img src="images/profile.jpg" class="profile" />
   </div>
 
-  <script src="script.js"></script>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Identity and Access Management (IAM) Engineer with 6+ years of experience managing enterprise identity platforms,
+      secure access control, and hybrid cloud environments. Specialized in Azure Entra ID, Active Directory, and Microsoft 365
+      with strong expertise in SAML, OAuth 2.0, OpenID Connect (OIDC), RBAC, and identity governance.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="tags">
+      <span>Azure Entra ID</span>
+      <span>Active Directory</span>
+      <span>RBAC</span>
+      <span>MFA</span>
+      <span>Conditional Access</span>
+      <span>SAML</span>
+      <span>OAuth</span>
+      <span>OIDC</span>
+      <span>Exchange Online</span>
+      <span>Microsoft 365</span>
+      <span>PowerShell</span>
+      <span>Azure Key Vault</span>
+      <span>Jira</span>
+      <span>ADManager Plus</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="project">
+      <h3>IAM Engineer — Solera Inc</h3>
+      <p>June 2024 – Present | Hyderabad</p>
+
+      <ul>
+        <li>Manage IAM operations for global users across EMEA, APAC, and North America</li>
+        <li>Administer Azure Entra ID and Active Directory for JML lifecycle</li>
+        <li>Manage Azure AD Connect sync and hybrid identity issues</li>
+        <li>Implement RBAC and enforce least privilege access</li>
+        <li>Configure SAML, OAuth, and OIDC SSO integrations</li>
+        <li>Manage application registrations and service principals</li>
+        <li>Administer Microsoft 365 and Exchange Online environments</li>
+        <li>Automate IAM and Exchange reporting using PowerShell</li>
+        <li>Conduct access reviews and audit log analysis</li>
+        <li>Monitor security alerts using Microsoft Defender</li>
+        <li>Implement Conditional Access and risk-based policies</li>
+        <li>Manage Azure Key Vault (secrets, keys, certificates)</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>IT TechOps Engineer — Copart</h3>
+      <p>March 2020 – June 2024 | Hyderabad</p>
+
+      <ul>
+        <li>Managed IAM lifecycle using Active Directory and Microsoft 365</li>
+        <li>Governed users, security groups, and access using RBAC</li>
+        <li>Administered Exchange Online mailbox and access control</li>
+        <li>Provisioned and deprovisioned enterprise application access</li>
+        <li>Managed service accounts and enforced secure practices</li>
+        <li>Supported global enterprise systems and access governance</li>
+        <li>Worked with SRE teams during critical incidents</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>Featured Work</h2>
+
+    <div class="project">
+      <h3>Exchange Mailbox Audit Automation</h3>
+      <p>PowerShell-based automation to extract mailbox data for compliance.</p>
+      <span class="tag">PowerShell</span>
+      <span class="tag">Exchange</span>
+    </div>
+
+    <div class="project">
+      <h3>IAM Access Provisioning Optimization</h3>
+      <p>Streamlined onboarding/offboarding using AD & Entra ID.</p>
+      <span class="tag">IAM</span>
+      <span class="tag">RBAC</span>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATION -->
+  <section>
+    <h2>Certification</h2>
+    <p>Microsoft Certified: Identity and Access Administrator Associate (SC-300)</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
