@@ -8,12 +8,16 @@
 
 <body>
 
-<button class="toggle" onclick="toggleDark()">🌙</button>
-
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
+  <!-- STATUS -->
+  <div class="status">
+    <span class="dot"></span>
+    system_status = online
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
     <div>
       <h1>I'm Arun.</h1>
       <p class="role">Identity & Access Management Engineer</p>
@@ -25,110 +29,55 @@
       </div>
     </div>
 
-    <img src="images/Arun Image.png" class="profile" />
+    <img src="images/Arun image.png" class="profile" />
   </div>
 
   <!-- ABOUT -->
-  <section>
+  <section class="card">
     <h2>About Me</h2>
     <p>
-      Identity and Access Management (IAM) Engineer with 6+ years of experience managing enterprise identity platforms,
-      secure access control, and hybrid cloud environments. Specialized in Azure Entra ID, Active Directory, and Microsoft 365
-      with strong expertise in SAML, OAuth 2.0, OpenID Connect (OIDC), RBAC, and identity governance.
+      IAM Engineer with 6+ years of experience managing enterprise identity platforms,
+      secure access control, and hybrid environments.
+      Specialized in Azure Entra ID, Active Directory, RBAC, SAML, OAuth, and identity governance.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section>
+  <section class="card">
     <h2>Technical Skills</h2>
     <div class="tags">
       <span>Azure Entra ID</span>
       <span>Active Directory</span>
       <span>RBAC</span>
-      <span>MFA</span>
+      <span>M365 Administration</span>
       <span>Conditional Access</span>
       <span>SAML</span>
       <span>OAuth</span>
       <span>OIDC</span>
       <span>Exchange Online</span>
-      <span>Microsoft 365</span>
       <span>PowerShell</span>
-      <span>Azure Key Vault</span>
-      <span>Jira</span>
-      <span>ADManager Plus</span>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section>
+  <section class="card">
     <h2>Experience</h2>
 
-    <div class="project">
-      <h3>IAM Engineer — Solera Inc</h3>
-      <p>June 2024 – Present | Hyderabad</p>
-
-      <ul>
-        <li>Manage IAM operations for global users across EMEA, APAC, and North America</li>
-        <li>Administer Azure Entra ID and Active Directory for JML lifecycle</li>
-        <li>Manage Azure AD Connect sync and hybrid identity issues</li>
-        <li>Implement RBAC and enforce least privilege access</li>
-        <li>Configure SAML, OAuth, and OIDC SSO integrations</li>
-        <li>Manage application registrations and service principals</li>
-        <li>Administer Microsoft 365 and Exchange Online environments</li>
-        <li>Automate IAM and Exchange reporting using PowerShell</li>
-        <li>Conduct access reviews and audit log analysis</li>
-        <li>Monitor security alerts using Microsoft Defender</li>
-        <li>Implement Conditional Access and risk-based policies</li>
-        <li>Manage Azure Key Vault (secrets, keys, certificates)</li>
-      </ul>
+    <div class="exp">
+      <h3>IAM Engineer — Solera</h3>
+      <p>June 2024 – Present</p>
     </div>
 
-    <div class="project">
+    <div class="exp">
       <h3>IT TechOps Engineer — Copart</h3>
-      <p>March 2020 – June 2024 | Hyderabad</p>
-
-      <ul>
-        <li>Managed IAM lifecycle using Active Directory and Microsoft 365</li>
-        <li>Governed users, security groups, and access using RBAC</li>
-        <li>Administered Exchange Online mailbox and access control</li>
-        <li>Provisioned and deprovisioned enterprise application access</li>
-        <li>Managed service accounts and enforced secure practices</li>
-        <li>Supported global enterprise systems and access governance</li>
-        <li>Worked with SRE teams during critical incidents</li>
-      </ul>
+      <p>March 2020 – June 2024</p>
     </div>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h2>Featured Work</h2>
-
-    <div class="project">
-      <h3>Exchange Mailbox Audit Automation</h3>
-      <p>PowerShell-based automation to extract mailbox data for compliance.</p>
-      <span class="tag">PowerShell</span>
-      <span class="tag">Exchange</span>
-    </div>
-
-    <div class="project">
-      <h3>IAM Access Provisioning Optimization</h3>
-      <p>Streamlined onboarding/offboarding using AD & Entra ID.</p>
-      <span class="tag">IAM</span>
-      <span class="tag">RBAC</span>
-    </div>
-
-  </section>
-
-  <!-- CERTIFICATION -->
-  <section>
-    <h2>Certification</h2>
-    <p>Microsoft Certified: Identity and Access Administrator Associate (SC-300)</p>
   </section>
 
 </div>
 
-<script src="script.js"></script>
+<!-- BACKGROUND SHAPE -->
+<div class="bg-shape">IAM</div>
 
 </body>
 </html>
