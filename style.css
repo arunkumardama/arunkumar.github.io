@@ -1,7 +1,15 @@
+/* BACKGROUND IMAGE WITH OVERLAY */
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #f8fafc;
-  color: #111;
+  color: #0f172a;
+
+  background:
+    linear-gradient(rgba(248, 250, 252, 0.92), rgba(248, 250, 252, 0.92)),
+    url("images/bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* CONTAINER */
@@ -9,6 +17,15 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 80px 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* GLASS EFFECT */
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 40px;
 }
 
 /* HERO */
@@ -18,16 +35,19 @@ body {
   align-items: center;
 }
 
+/* PROFILE */
 .profile {
-  width: 90px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* STATUS */
 .status {
   display: inline-flex;
   align-items: center;
-  background: #f1f5f9;
+  background: rgba(0,0,0,0.05);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
@@ -37,7 +57,7 @@ body {
 .dot {
   height: 8px;
   width: 8px;
-  background: green;
+  background: #22c55e;
   border-radius: 50%;
   margin-right: 6px;
 }
@@ -46,39 +66,64 @@ body {
 .links a {
   margin-right: 15px;
   text-decoration: none;
+  font-weight: 500;
   color: #2563eb;
+}
+
+/* ROLE TEXT */
+.role {
+  color: #64748b;
 }
 
 /* CARD STYLE */
 .card {
   margin-top: 40px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 /* TAGS */
 .tags span {
   display: inline-block;
-  background: #eee;
+  background: #e2e8f0;
   padding: 6px 12px;
   margin: 5px;
   border-radius: 20px;
   font-size: 12px;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* EXPERIENCE */
+.exp {
+  margin-top: 20px;
 }
 
 /* BACKGROUND SHAPE */
 .bg-shape {
   position: fixed;
-  right: -100px;
-  bottom: -100px;
-  width: 400px;
-  height: 400px;
-  background: #c7f0e9;
+  right: -150px;
+  bottom: -150px;
+  width: 500px;
+  height: 500px;
+  background: #7dd3fc;
   border-radius: 50%;
-  font-size: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.3;
-  transform: rotate(-20deg);
+  opacity: 0.2;
+  filter: blur(50px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
