@@ -104,17 +104,19 @@ p {
 }
 
 /* CERTIFICATION BANNER */
+/* CERTIFICATION FIX */
 .cert-section {
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .cert-banner {
   width: 100%;
-  max-width: 100%;
+  max-width: 700px;   /* 🔥 THIS CONTROLS SIZE */
   border-radius: 12px;
 
-  /* makes it look premium */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 /* PROJECT */
 .project {
