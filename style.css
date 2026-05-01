@@ -17,6 +17,17 @@ body {
   padding: 80px 20px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  width: 100px;
+  border-radius: 50%;
+}
+
 .role {
   color: var(--muted);
 }
@@ -27,7 +38,7 @@ body {
   font-weight: 500;
 }
 
-.projects {
+section {
   margin-top: 50px;
 }
 
@@ -36,16 +47,21 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-.tag {
+.tag, .tags span {
   display: inline-block;
-  padding: 4px 10px;
-  margin-right: 6px;
+  padding: 5px 10px;
+  margin: 5px;
   background: #eee;
   border-radius: 20px;
   font-size: 12px;
 }
 
-/* Dark mode */
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
 .dark {
   --bg: #0f172a;
   --main: #f1f5f9;
