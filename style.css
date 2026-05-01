@@ -1,1 +1,54 @@
+:root {
+  --bg: #f8fafc;
+  --main: #111;
+  --muted: #666;
+  --border: #ddd;
+}
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--main);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.role {
+  color: var(--muted);
+}
+
+.links a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.projects {
+  margin-top: 50px;
+}
+
+.project {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 6px;
+  background: #eee;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Dark mode */
+.dark {
+  --bg: #0f172a;
+  --main: #f1f5f9;
+  --muted: #94a3b8;
+  --border: #1e293b;
+}
